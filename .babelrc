@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    "transform-vue-jsx"
+  ],
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "comments": false
+}

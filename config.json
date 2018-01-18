@@ -1,0 +1,13 @@
+{
+  "ssh": {
+    "host": "172.16.130.136",
+    "username": "",
+    "password": "",
+    "port": "22",
+    "remotePath": "/data/html/admin/aaaa"
+  },
+  "proxy": {
+    "host": "115.28.169.134",
+    "port": "1976"
+  }
+}
