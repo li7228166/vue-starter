@@ -9,10 +9,7 @@ const styleUse = (type = 'css') => {
     let use = [{
         loader: "style-loader"
     }, {
-        loader: "css-loader",
-        options: {
-            sourceMap: true
-        }
+        loader: "css-loader"
     }, {
         loader: "postcss-loader",
         options: {
@@ -22,12 +19,17 @@ const styleUse = (type = 'css') => {
             }
         }
     }];
-    type === 'less' ? use.push({
-        loader: "less-loader",
-        options: {
+    if (type === 'less') {
+        use[1]['options'] = {
             sourceMap: true
-        }
-    }) : '';
+        };
+        use.push({
+            loader: "less-loader",
+            options: {
+                sourceMap: true
+            }
+        })
+    }
     return use;
 };
 
